@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+.container{
+    color: white;
+}
+
+.navbar h1{
+    font-size: bold;
+    display: inline-block;
+    user-select: none;
+
+}
+.saatseçme{
+    width: 100%;
+    font-size: 70px;
+    user-select: none;
+}
+.içerik{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+    user-select: none;
+
+}
+.yazı{
+    max-width: 600px;
+    width: 100%;
+    margin: auto;
+    user-select: none;
+
+}
+.saatseçme a{
+    color: white;
+    text-decoration: none;
+
+}
+.saatseçme .a1:hover{
+    font-size: 100px;
+    transition: 0.2s;
+    background-color: crimson;
+}
+.saatseçme .a2:hover{
+    font-size: 100px;
+    transition: 0.2s;
+    background-color: rgb(139, 84, 95);
+}
+.saatseçme .a3:hover{
+    font-size: 100px;
+    transition: 0.2s;
+    background-color: rgb(122, 37, 54);
+}
+.saatseçme .a4:hover{
+    font-size: 100px;
+    transition: 0.2s;
+    background-color: rgb(28, 15, 141);
+}
+.saatseçme .a5:hover{
+    font-size: 100px;
+    transition: 0.2s;
+    background-color: rgba(161, 111, 2, 0.801);
+}
+.saatseçme .a6:hover{
+    font-size: 100px;
+    transition: 0.2s;
+    background-color: rgb(118, 119, 89);
+}
+.saatseçme .a1{
+
+    background-color: crimson;
+}
+.saatseçme .a2{
+
+    background-color: rgb(139, 84, 95);
+}
+.saatseçme .a3{
+
+    background-color: rgb(122, 37, 54);
+}
+.saatseçme .a4{
+
+    background-color: rgb(28, 15, 141);
+}
+.saatseçme .a5{
+    background-color: rgba(161, 111, 2, 0.801);
+}
+.saatseçme .a6{
+    background-color: rgb(118, 119, 89);
+}
+.yazı a{
+    text-decoration: none;
+    color: blue;
+}
+.nedir{
+    font-size: 20px;
+    text-align: left;
+}
+.baslık{
+    text-align: center;
+    color: red;
+}
+.nedir:hover{
+    color: yellow;
+    font-size: 25px;
+    
+}
+.faydaları{
+    font-size: 20px;
+    text-align: left;
+}
+.faydaları a{
+    text-decoration: none;
+    color: blue;
+}
+.faydaları:hover{
+    color: yellow;
+    font-size: 25px;
+
+}
+.footer{
+    text-align: center;
+    width: 100%;
+
+    font-size: 30px;
+}
+.footer a{
+    text-decoration: none;
+    color: blue;
+}
+@media screen and (max-width: 320px) {
+    .saatseçme{
+        width: 100%;
+        font-size: 75px;
+        user-select: none;
+    }
+    .navbar h1{
+        font-size: bold;
+        display: inline-block;
+        user-select: none;
+    
+    }    
+}

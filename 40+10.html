@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>40+10 Pomodoro Saat |Furhex</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <a href="./index.html"><h1>Pomodoro Saat v1.0|Furhex</h1></a>
+
+        </div>
+        <div class="saat">
+            <p id="time">30:00</p>
+            <button onclick="start('1', this)">Başla</button>
+            <button onclick="stop()">Durdur</button>
+            <button onclick="location.reload()">Sıfırla</button>
+            <button onclick="mola()">Mola</button>
+
+
+    
+        </div>
+    </div>
+
+
+</body>
+<script>
+    var myTime = 40 *60
+    var interval
+    var time = document.getElementById("time")
+
+    function start(id, el) {
+        interval = setInterval(countDown, 1000)
+        el.innerText = 'Devam Et';
+
+    }
+    function stop() {
+        clearInterval(interval)
+
+    }
+    function mola(){
+        myTime = 10 * 60
+        var minute = Math.floor(myTime / 60)
+        var seconds = myTime - minute * 60
+        time.innerHTML = `${minute}:${seconds}`
+        clearInterval(interval)
+    }
+    function countDown() {
+        myTime -= 1
+        var minute = Math.floor(myTime / 60)
+        var seconds = myTime - minute * 60
+        time.innerHTML = `${minute}:${seconds}`
+    }
+
+</script>
+</html>
